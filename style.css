@@ -1,0 +1,14 @@
+#loading{
+    display: none;
+}
+#error{
+    display:none
+}
+#pais{
+    animation-duration: 2s !important;
+    transition: linear !important;
+}
+.sppiner{
+    animation-duration: 2s !important;
+    transition: linear !important; 
+}
