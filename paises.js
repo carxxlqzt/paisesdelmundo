@@ -9,6 +9,7 @@ let i
 for(i=0;i<data.length;i++){
     let cardPaises=document.createElement("div")
     cardPaises.classList.add("w-25")
+    cardPaises.classList.add("phone")
     cardPaises.classList.add("m-3")
 
 cardPaises.innerHTML=`
