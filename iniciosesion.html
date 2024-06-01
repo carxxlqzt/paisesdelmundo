@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>Paises del Mundo</title>
 </head>
 <body>
     <head>
@@ -21,7 +21,7 @@
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="paises.html">Paises del Mundo</a>
@@ -33,35 +33,37 @@
                     <a class="nav-link" href="registro.html">Registrarse</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="iniciosesion.html">Iniciar Sesión</a>
+                    <a class="nav-link active" href="iniciosesion.html">Iniciar Sesión</a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
     </head>
-    <main class="container w-100 d-flex justify-content-center align-items-center flex-column mt-5"> 
-        <h1 class="animate__animated animate__bounce">Bienvenidos!</h1>
-        <h2 class="animate__animated animate__flipInY animate__delay-1s"> Encuentra tu pais favorito</h2>
-        <div class="d-flex w-50 p-4">  
-                <input class="form-control me-2" type="text" id="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" id="boton">Search</button>
-        </div>
-        <div id="loading" class="p-5"> 
-            <img src="img/sppiner.gif" class="animate__animated animate__fadeIn animate__delay-0.8s sppiner" srcset="">
-        </div>
-        <div id="error" class="p-5">
-            <h2> Ha ocurrido un error, vuelva a intentar</h2>
-         </div>
-                    
-        <div id="card_pais" class="mt-2 mb-5">
-
-        </div>
-       
-          
-         
-     </main>
-   
+    <main id="main" class="main">
+        <section data-aos="zoom-in" data-aos-duration="1000" class="seccionRegistrarse ">
+            <form action="" method="get">
+                <div class="d-flex flex-column align-items-center  m-4">
+                <h2 class="tituloRegistrarse">Iniciar Sesión</h2>
+                <div class="w-50">
+                <div class="m-3">
+                    <input class="form-control" type="email" placeholder="Email" id="email" name="email">
+                    <div class="error-text"></div>
+                </div>
+                <div class="m-3">
+                    <input class="form-control" type="password" placeholder="Contraseña" id="password" name="password">
+                    <div class="error-text"></div>
+                </div>
+                <div class="m-3">
+                    <input class="btn btn-primary m-2" type="submit" value="Iniciar Sesión">
+                </div>
+                <div class="m-3">
+                    <a id="ayuda" class="ayuda" href="registrarse.html">Registrarse</a>
+                </div>
+            </div></div>
+            </form>
+        </section>
+    </main>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
